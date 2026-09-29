@@ -3,7 +3,7 @@
 
 use core::panic::PanicInfo;
 
-#[unsafe(no_mangle)]
+#[no_mangle]
 pub fn show(val: u32) {
     unsafe {
         core::arch::asm!(
